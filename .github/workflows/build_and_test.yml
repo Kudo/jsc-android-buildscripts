@@ -83,6 +83,6 @@ jobs:
       run: |
         mv archive/dist .
         cd test
-        yarn
+        yarn --network-timeout 100000
         cd android && ./gradlew assembleDebug assembleAndroidTest connectedAndroidTest
       shell: bash
