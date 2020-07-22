@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: reactnativecommunity/react-native-android:2019-10-18
+    container: reactnativecommunity/react-native-android:2019-9-4
 
     steps:
     - uses: actions/checkout@v1
