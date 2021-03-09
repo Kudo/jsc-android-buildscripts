@@ -26,8 +26,8 @@
     "start": "./scripts/start.sh"
   },
   "config": {
-    "webkitGTK": "2.28.3",
-    "chromiumICUCommit": "f2223961702f00a8833874b0560d615a2cc42738"
+    "webkitGTK": "2.30.5",
+    "chromiumICUCommit": "39e57b58107d5dbe083ea73a1d5433f08f00fb1d"
   },
   "devDependencies": {
     "commander": "^4.0.1",

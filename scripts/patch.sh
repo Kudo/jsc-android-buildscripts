@@ -60,9 +60,6 @@ JSC_PATCHSET=(
 
   # Improve heap GC mechanism like iOS
   "jsc_heap_gc_like_ios.patch"
-
-  # equivalentYearForDST is defined in WTF namespace
-  "jsc_fix_build_error_equivalentYearForDST.patch"
 )
 
 if [[ "$I18N" = false ]]

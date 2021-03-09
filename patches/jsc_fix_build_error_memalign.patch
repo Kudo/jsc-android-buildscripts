@@ -1,16 +1,14 @@
-diff -aur target-org/webkit/Source/bmalloc/CMakeLists.txt target/webkit/Source/bmalloc/CMakeLists.txt
---- target-org/webkit/Source/bmalloc/CMakeLists.txt  2018-07-12 11:27:26.185794000 -0700
-+++ target/webkit/Source/bmalloc/CMakeLists.txt    2019-06-11 12:20:28.556676100 -0700
-@@ -32,6 +32,7 @@
-     bmalloc/VMHeap.cpp
+diff -aru target-org/webkit/Source/bmalloc/CMakeLists.txt target/webkit/Source/bmalloc/CMakeLists.txt
+--- target-org/webkit/Source/bmalloc/CMakeLists.txt     2021-03-09 16:43:42.000000000 +0800
++++ target/webkit/Source/bmalloc/CMakeLists.txt 2021-03-09 16:53:16.000000000 +0800
+@@ -33,6 +33,7 @@
+     bmalloc/PerProcess.cpp
+     bmalloc/Scavenger.cpp
      bmalloc/bmalloc.cpp
-     bmalloc/mbmalloc.cpp
 +    bmalloc/posix_memalign.cpp
  )
 
- if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
-
-
+ set(bmalloc_PUBLIC_HEADERS
 diff -aur /dev/null target/webkit/Source/bmalloc/bmalloc/posix_memalign.cpp
 --- /dev/null   2019-06-11 10:46:36.937580800 -0700
 +++ target/webkit/Source/bmalloc/bmalloc/posix_memalign.cpp 2019-06-11 14:47:32.119738900 -0700
