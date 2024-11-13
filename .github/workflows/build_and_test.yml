@@ -26,8 +26,8 @@ jobs:
 
     - name: Install packages
       run: |
-        apt-get update
-        apt-get install coreutils curl git subversion wget python3 ruby gperf -y
+        sudo apt-get update
+        sudo apt-get install coreutils curl git subversion wget python3 ruby gperf -y
       shell: bash
 
     - name: Install Android packages
