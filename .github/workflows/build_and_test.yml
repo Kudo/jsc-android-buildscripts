@@ -33,7 +33,7 @@ jobs:
     - name: Install Android packages
       run: |
         export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools
-        yes | sdkmanager --licenses
+        yes | sdkmanager --licenses || true
         sdkmanager \
           "cmake;3.22.1" \
           "ndk;27.1.12297006"
