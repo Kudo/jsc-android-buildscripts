@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
-export ANDROID_API_FOR_ABI_32=16
-export ANDROID_API_FOR_ABI_64=21
+export ANDROID_API_FOR_ABI_32=24
+export ANDROID_API_FOR_ABI_64=24
 export ROOTDIR=$PWD
 
 source $ROOTDIR/scripts/env.sh

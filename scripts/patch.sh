@@ -20,14 +20,14 @@ JSC_PATCHSET=(
 
   # NDK API 16 does not have getline().
   # Since the WTF MemoryFootprint is not used in JSC, comment out all the code.
-  "jsc_fix_build_error_getline.patch"
+  # "jsc_fix_build_error_getline.patch"
 
   # NDK API 16 does not have log2().
   # Add custom polyfill
-  "jsc_fix_build_error_log2.patch"
+  # "jsc_fix_build_error_log2.patch"
 
   # NDK API 16 does not have posix_memalign
-  "jsc_fix_build_error_memalign.patch"
+  # "jsc_fix_build_error_memalign.patch"
 
   # Fix build error which related to C++StringView
   "jsc_fix_build_error_stringview.patch"
@@ -47,7 +47,7 @@ JSC_PATCHSET=(
 
   # statvfs is provided after NDK API level 19.
   # Use statfs as fallback
-  "jsc_fix_build_error_statvfs.patch"
+  # "jsc_fix_build_error_statvfs.patch"
 
   # Misc errors
   "jsc_fix_build_error_miss_headers.patch"
