@@ -81,7 +81,7 @@ createAAR() {
   local i18n=$4
   printf "\n\n\t\t===================== create aar :${target}: =====================\n\n"
   cd $ROOTDIR/lib
-  ./gradlew clean :${target}:createAAR \
+  ./gradlew clean :${target}:publish \
       --project-prop distDir="${distDir}" \
       --project-prop jniLibsDir="${jniLibsDir}" \
       --project-prop revision="$REVISION" \
