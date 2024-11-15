@@ -104,13 +104,12 @@ jobs:
 
     - name: Run test
       uses: reactivecircus/android-emulator-runner@v2
+      working-directory: test
       with:
         api-level: 24
         arch: x86_64
         target: google_apis
         script: |
-          mv archive/dist .
-          cd test
-          yarn install --frozen-lockfile
+          mv ../archive/dist ../dist
           npx expo run:android --variant release
           maestro test maestro.yaml
