@@ -108,9 +108,6 @@ export DISTDIR=${ROOTDIR}/dist
 printf "\n\n\t\t===================== create stripped distributions =====================\n\n"
 createAAR "android-jsc" ${DISTDIR} ${INSTALL_DIR_I18N_false} "false"
 createAAR "android-jsc" ${DISTDIR} ${INSTALL_DIR_I18N_true} "true"
-printf "\n\n\t\t===================== ooxx =====================\n\n"
-find ${INSTALL_CPPRUNTIME_DIR}
-printf "\n\n\t\t===================== ooxx =====================\n\n"
 createAAR "cppruntime" ${DISTDIR} ${INSTALL_CPPRUNTIME_DIR} "false"
 copyHeaders ${DISTDIR}
 
@@ -118,9 +115,6 @@ printf "\n\n\t\t===================== create unstripped distributions ==========
 export DISTDIR=${ROOTDIR}/dist.unstripped
 createAAR "android-jsc" ${DISTDIR} ${INSTALL_UNSTRIPPED_DIR_I18N_false} "false"
 createAAR "android-jsc" ${DISTDIR} ${INSTALL_UNSTRIPPED_DIR_I18N_true} "true"
-printf "\n\n\t\t===================== ooxx =====================\n\n"
-find ${INSTALL_CPPRUNTIME_DIR}
-printf "\n\n\t\t===================== ooxx =====================\n\n"
 createAAR "cppruntime" ${DISTDIR} ${INSTALL_CPPRUNTIME_DIR} "false"
 copyHeaders ${DISTDIR}
 
